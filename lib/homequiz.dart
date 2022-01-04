@@ -1,14 +1,9 @@
-
 import 'dart:math';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:flutter_riverpod_quiz/controllers/quiz/quiz_controller.dart';
 import 'package:flutter_riverpod_quiz/controllers/quiz/quiz_state.dart';
 import 'package:flutter_riverpod_quiz/enums/difficulty.dart';
-import 'package:flutter_riverpod_quiz/home.dart';
-// import 'package:flutter_riverpod_quiz/login.dart';
 import 'package:flutter_riverpod_quiz/models/failure_model.dart';
 import 'package:flutter_riverpod_quiz/models/question_model.dart';
 import 'package:flutter_riverpod_quiz/repositories/quiz/quiz_repository.dart';
@@ -210,13 +205,13 @@ class QuizResults extends StatelessWidget {
             context.read(quizControllerProvider).reset();
           },
         ),
-        SizedBox(height: 10.0,),
-        CustomButton(
-          title: 'Log Out',
-          onTap: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context)=> Homestart()));
-          },
-        ),
+        // SizedBox(height: 10.0,),
+        // CustomButton(
+        //   title: 'Log Out',
+        //   onTap: () {
+        //     Navigator.push(context, MaterialPageRoute(builder: (context)=> Homestart()));
+        //   },
+        // ),
       ],
     );
   }
