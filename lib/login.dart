@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod_quiz/homequiz.dart';
 
-class login extends StatefulWidget {
-  //const login({ Key? key }) : super(key: key);
+class LoginPage extends StatefulWidget {
+  //const LoginPage({ Key? key }) : super(key: key);
 
   @override
-  _loginState createState() => _loginState();
+  _LoginPageState createState() => _LoginPageState();
 }
 
-class _loginState extends State<login> {
+class _LoginPageState extends State<LoginPage> {
 
   bool hidepassword= true; 
 

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter_riverpod_quiz/homequiz.dart';
 import 'package:flutter_riverpod_quiz/login.dart';
 import 'package:flutter_riverpod_quiz/register.dart';
 
@@ -45,7 +44,7 @@ class _HomestartState extends State<Homestart> {
                       child: Center(
                         child: Text('Log In', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 20, color: Colors.black))),
                       onTap: (){
-                       Navigator.push(context, MaterialPageRoute(builder: (context)=> login()));
+                       Navigator.push(context, MaterialPageRoute(builder: (context)=> LoginPage()));
                     },
                     ),
                   ),

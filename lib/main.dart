@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod_quiz/home.dart';
+import 'package:flutter_riverpod_quiz/homequiz.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 void main() {
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
           bottomSheetTheme:
               const BottomSheetThemeData(backgroundColor: Colors.transparent),
         ),
-        home: Homestart(),    
+        home: QuizScreen(),    
       ),
     );
   }
