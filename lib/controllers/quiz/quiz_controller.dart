@@ -3,7 +3,7 @@ import 'package:flutter_riverpod_quiz/models/question_model.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 final quizControllerProvider =
-    StateNotifierProvider.autoDispose<QuizController>(
+    StateNotifierProvider.autoDispose<QuizController, dynamic>(
   (ref) => QuizController(),
 );
 

@@ -1,14 +1,11 @@
-
 import 'dart:math';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+// import 'package:flutter_riverpod_quiz/controllers/auth_controller.dart';
 import 'package:flutter_riverpod_quiz/controllers/quiz/quiz_controller.dart';
 import 'package:flutter_riverpod_quiz/controllers/quiz/quiz_state.dart';
 import 'package:flutter_riverpod_quiz/enums/difficulty.dart';
 import 'package:flutter_riverpod_quiz/home.dart';
-// import 'package:flutter_riverpod_quiz/login.dart';
 import 'package:flutter_riverpod_quiz/models/failure_model.dart';
 import 'package:flutter_riverpod_quiz/models/question_model.dart';
 import 'package:flutter_riverpod_quiz/repositories/quiz/quiz_repository.dart';
@@ -49,7 +46,7 @@ class QuizScreen extends HookWidget {
         ),
         bottomSheet: quizQuestions.maybeWhen(
           data: (questions) {
-            final quizState = useProvider(quizControllerProvider.state);
+            final quizState = useProvider(quizControllerProvider);
             if (!quizState.answered) return const SizedBox.shrink();
             return CustomButton(
               title: pageController.page.toInt() + 1 < questions.length
@@ -81,7 +78,7 @@ class QuizScreen extends HookWidget {
   ) {
     if (questions.isEmpty) return QuizError(message: 'No questions found.');
 
-    final quizState = useProvider(quizControllerProvider.state);
+    final quizState = useProvider(quizControllerProvider);
     return quizState.status == QuizStatus.complete
         ? QuizResults(state: quizState, questions: questions)
         : QuizQuestions(

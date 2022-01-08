@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">435000661549-orvtktvhlaei12ifls1pv2kmo2dstuh8.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">435000661549</string>
+    <string name="google_api_key" translatable="false">AIzaSyDV2nIeQWwH0cGYjrAALTGLdz9K_RSOyKE</string>
+    <string name="google_app_id" translatable="false">1:435000661549:android:402c91dd131ddeb3a4caa4</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDV2nIeQWwH0cGYjrAALTGLdz9K_RSOyKE</string>
+    <string name="google_storage_bucket" translatable="false">quizpro-6eb7a.appspot.com</string>
+    <string name="project_id" translatable="false">quizpro-6eb7a</string>
+</resources>

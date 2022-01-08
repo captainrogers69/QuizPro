@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "435000661549",
+    "project_id": "quizpro-6eb7a",
+    "storage_bucket": "quizpro-6eb7a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435000661549:android:402c91dd131ddeb3a4caa4",
+        "android_client_info": {
+          "package_name": "com.rogers.quiz_pro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435000661549-orvtktvhlaei12ifls1pv2kmo2dstuh8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDV2nIeQWwH0cGYjrAALTGLdz9K_RSOyKE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "435000661549-orvtktvhlaei12ifls1pv2kmo2dstuh8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
